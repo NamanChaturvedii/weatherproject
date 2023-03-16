@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{>headerlinks}}
+</head>
+<body>
+
+    {{>navbar}}
+    <!-- main header -->
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter your city name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn" >
+                    </form>
+                </div>
+
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">Tuesday</p>
+                        <p id="today_data">13 OCT</p>
+
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Get output here</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="tempreal">0</span> <sup>0</sup>C</p>
+                            <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+                    
+ {{!-- footer --}}
+  {{>footer}}
+  <script src="js/main.js"></script>
+  <script>
+    
+    const getCurrent= ()=>{
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            let currentTime= new Date();
+            days = weekday[currentTime.getDay()];
+            const day=document.getElementById("day")
+            
+            day.innerText=days;
+        }
+        getCurrent();
+
+        const getDate= ()=>{
+            var months=[
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "June",
+            "July",
+            "Aug",
+            "Oct",
+            "Nov",
+            "Dec",
+            ];
+            const news=new Date();
+            month=months[news.getMonth()+1];
+            dates= news.getDate();
+            out=`${dates}  ${month}`
+            const date= document.getElementById("today_data")
+
+            date.innerText=out;
+        }
+        getDate();
+  </script>
+</body>
+</html>
