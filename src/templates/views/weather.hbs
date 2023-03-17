@@ -65,7 +65,7 @@
             "Dec",
             ];
             const news=new Date();
-            month=months[news.getMonth()+1];
+            month=months[news.getMonth()];
             dates= news.getDate();
             out=`${dates}  ${month}`
             const date= document.getElementById("today_data")
