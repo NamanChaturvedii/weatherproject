@@ -174,6 +174,7 @@ span{
 .tempInformation{
     width: 60rem;
     margin: auto;
+    margin-bottom: 2px;
     min-height: 20rem;
     background-color: #323544;
     font-family: "Roboto",sans-serif;
@@ -287,6 +288,11 @@ footer p{
         margin-top: 3rem;
     }
 
+    sup{
+        font-size: 3rem;
+        margin-top: -2rem;
+    }
+
     
     .temp_form{
         width: auto;
@@ -299,7 +305,7 @@ footer p{
 
     .main_layer .middle_layer p,
 .main_layer .middle_layer .fa{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 }
 
