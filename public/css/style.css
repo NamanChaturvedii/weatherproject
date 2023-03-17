@@ -10,6 +10,7 @@
 .carousel-inner{
     height: 40vh;
     border-radius: 5px;
+    margin-bottom: 3px;
 }
 
 :root{

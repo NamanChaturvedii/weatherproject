@@ -1,7 +1,7 @@
 const express= require('express')
 const app = express();
 const hbs =require("hbs")
-const port = process.env.PORT || 3000; // the words written in the start are for situation in which it port will run on 3000 or on the given port
+const port = process.env.PORT || 3023; // the words written in the start are for situation in which it port will run on 3000 or on the given port
 const path = require("path")
 
 // public static path
